@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "mccourses:block/nether_alexandrite_ore"
+  }
+}

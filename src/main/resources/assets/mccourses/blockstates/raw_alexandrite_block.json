@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mccourses:block/raw_alexandrite_block"
+    }
+  }
+}
