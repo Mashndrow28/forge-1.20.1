@@ -2,6 +2,7 @@ package net.mashy.mccourses;
 
 import com.mojang.logging.LogUtils;
 import net.mashy.mccourses.block.ModBlocks;
+import net.mashy.mccourses.item.ModCreativeModeTabs;
 import net.mashy.mccourses.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -30,6 +31,7 @@ public class MCCourseMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
