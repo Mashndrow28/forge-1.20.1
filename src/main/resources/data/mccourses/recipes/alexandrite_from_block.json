@@ -1,0 +1,13 @@
+{
+  "type":"minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mccourses:alexandrite_block"
+    }
+  ],
+  "result": {
+    "item": "mccourses:alexandrite",
+    "count": 9
+  }
+}
