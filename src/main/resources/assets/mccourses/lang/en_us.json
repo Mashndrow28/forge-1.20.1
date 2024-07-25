@@ -3,6 +3,8 @@
   "item.mccourses.raw_alexandrite": "Raw Alexandrite",
   "item.mccourses.metal_detector": "Metal Detector",
   "item.mccourses.kohlrabi": "Kohlrabi",
+  "item.mccourses.peat_brick": "Peat Brick",
+
 
   "block.mccourses.alexandrite_block": "Block of Alexandrite",
   "block.mccourses.raw_alexandrite_block": "Block of Raw Alexandrite",
@@ -14,7 +16,11 @@
 
   "creativetab.course_tab": "Course Tab",
 
-  "item.mccourses.metal_detector.no_valuables": "No Valuables Found!"
+  "item.mccourses.metal_detector.no_valuables": "No Valuables Found!",
+
+  "tooltip.mccourses.metal_detector.tooltip.shift": "Right Click on Blocks to find Valuables",
+  "tooltip.mccourses.metal_detector.tooltip": "Press §eSHIFT§r for more Information",
+  "tooltip.mccourses.sound_block": "Plays nice sounds when walking or right-clicking"
 
 
 }

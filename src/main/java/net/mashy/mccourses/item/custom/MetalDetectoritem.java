@@ -1,15 +1,23 @@
 package net.mashy.mccourses.item.custom;
 
+import net.mashy.mccourses.util.ModTags;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class MetalDetectoritem extends Item {
     public MetalDetectoritem(Properties pProperties) {
@@ -43,7 +51,19 @@ public class MetalDetectoritem extends Item {
         pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(),
                 player -> player.broadcastBreakEvent(player.getUsedItemHand()));
 
-        return super.useOn(pContext);
+        return InteractionResult.SUCCESS;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+        if (Screen.hasShiftDown()){
+            pTooltipComponents.add(Component.translatable("tooltip.mccourses.metal_detector.tooltip.shift"));
+        }else {
+            pTooltipComponents.add(Component.translatable("tooltip.mccourses.metal_detector.tooltip"));
+
+        }
+
+        super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 
     private void outputNoValuableFound(Player player) {
@@ -56,7 +76,6 @@ public class MetalDetectoritem extends Item {
     }
 
     private boolean isValuableBlock(BlockState blockState) {
-        return blockState.is(Blocks.IRON_ORE) || blockState.is(Blocks.DEEPSLATE_IRON_ORE)
-                || blockState.is(Blocks.DIAMOND_ORE);
+        return blockState.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
     }
 }
