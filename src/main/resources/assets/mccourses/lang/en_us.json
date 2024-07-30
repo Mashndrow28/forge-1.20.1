@@ -21,6 +21,8 @@
   "block.mccourses.alexandrite_fence": "Alexandrite Fence",
   "block.mccourses.alexandrite_fence_gate": "Alexandrite Fence Gate",
   "block.mccourses.alexandrite_wall": "Alexandrite Wall",
+  "block.mccourses.alexandrite_door": "Alexandrite Door",
+  "block.mccourses.alexandrite_trapdoor": "Alexandrite Trapdoor",
 
   "creativetab.course_tab": "Course Tab",
 
