@@ -6,6 +6,8 @@
     "mccourses:deepslate_alexandrite_ore",
     "mccourses:nether_alexandrite_ore",
     "mccourses:end_stone_alexandrite_ore",
-    "mccourses:sound_block"
+    "mccourses:sound_block",
+    "mccourses:alexandrite_stairs",
+    "mccourses:alexandrite_slab"
   ]
 }

@@ -14,6 +14,14 @@
   "block.mccourses.nether_alexandrite_ore": "Block of Nether Alexandrite Ore",
   "block.mccourses.sound_block": "Sound Block",
 
+  "block.mccourses.alexandrite_stairs": "Alexandrite Stairs",
+  "block.mccourses.alexandrite_slab": "Alexandrite Slab",
+  "block.mccourses.alexandrite_pressure_plate": "Alexandrite Pressure Plate",
+  "block.mccourses.alexandrite_button": "Alexandrite Button",
+  "block.mccourses.alexandrite_fence": "Alexandrite Fence",
+  "block.mccourses.alexandrite_fence_gate": "Alexandrite Fence Gate",
+  "block.mccourses.alexandrite_wall": "Alexandrite Wall",
+
   "creativetab.course_tab": "Course Tab",
 
   "item.mccourses.metal_detector.no_valuables": "No Valuables Found!",
