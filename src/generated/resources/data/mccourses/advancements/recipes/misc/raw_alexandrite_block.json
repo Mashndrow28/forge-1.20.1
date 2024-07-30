@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_alexandrite_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mccourses:raw_alexandrite_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mccourses:raw_alexandrite_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_alexandrite_block",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mccourses:raw_alexandrite_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}
