@@ -44,14 +44,19 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
          this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                  .add(ModBlocks.DEEPSLATE_ALEXANDRITE_ORE.get(),
-                         ModBlocks.NETHER_ALEXANDRITE_ORE.get(),
                          ModBlocks.END_STONE_ALEXANDRITE_ORE.get());
+
+        this.tag(ModTags.Blocks.NEEDS_ALEXANDRITE_TOOL)
+                .add(ModBlocks.NETHER_ALEXANDRITE_ORE.get());
+
          this.tag(BlockTags.FENCES)
                  .add(ModBlocks.ALEXANDRITE_FENCE.get());
          this.tag(BlockTags.FENCE_GATES)
                 .add(ModBlocks.ALEXANDRITE_FENCE_GATE.get());
          this.tag(BlockTags.WALLS)
                 .add(ModBlocks.ALEXANDRITE_WALL.get());
+
+
     }
 
     @Override

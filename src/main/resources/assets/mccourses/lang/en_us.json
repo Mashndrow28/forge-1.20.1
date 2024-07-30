@@ -5,6 +5,11 @@
   "item.mccourses.kohlrabi": "Kohlrabi",
   "item.mccourses.peat_brick": "Peat Brick",
 
+  "item.mccourses.alexandrite_sword": "Alexandrite Sword",
+  "item.mccourses.alexandrite_pickaxe": "Alexandrite PickAxe",
+  "item.mccourses.alexandrite_axe": "Alexandrite Axe",
+  "item.mccourses.alexandrite_shovel": "Alexandrite Shovel",
+  "item.mccourses.alexandrite_hoe": "Alexandrite Hoe",
 
   "block.mccourses.alexandrite_block": "Block of Alexandrite",
   "block.mccourses.raw_alexandrite_block": "Block of Raw Alexandrite",

@@ -3,7 +3,7 @@ package net.mashy.mccourses.item;
 import net.mashy.mccourses.MCCourseMod;
 import net.mashy.mccourses.item.custom.FuelItem;
 import net.mashy.mccourses.item.custom.MetalDetectoritem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,6 +24,16 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.KOHLRABI)));
     public static final RegistryObject<Item> PEAT_BRICK = ITEMS.register("peat_brick",
             () -> new FuelItem(new Item.Properties(), 200));
+    public static final RegistryObject<Item> ALEXANDRITE_SWORD = ITEMS.register("alexandrite_sword",
+            () -> new SwordItem(ModToolTiers.ALEXANDRITE, 2,3,new Item.Properties().durability(256)));
+    public static final RegistryObject<Item> ALEXANDRITE_PICKAXE = ITEMS.register("alexandrite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.ALEXANDRITE, 1,2,new Item.Properties().durability(256)));
+    public static final RegistryObject<Item> ALEXANDRITE_AXE = ITEMS.register("alexandrite_axe",
+            () -> new AxeItem(ModToolTiers.ALEXANDRITE, 3,1,new Item.Properties().durability(256)));
+    public static final RegistryObject<Item> ALEXANDRITE_HOE = ITEMS.register("alexandrite_hoe",
+            () -> new HoeItem(ModToolTiers.ALEXANDRITE, 1,5,new Item.Properties().durability(256)));
+    public static final RegistryObject<Item> ALEXANDRITE_SHOVEL = ITEMS.register("alexandrite_shovel",
+            () -> new ShovelItem(ModToolTiers.ALEXANDRITE, 2,3,new Item.Properties().durability(256)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
