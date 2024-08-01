@@ -3,6 +3,7 @@ package net.mashy.mccourses.item;
 import net.mashy.mccourses.MCCourseMod;
 import net.mashy.mccourses.item.custom.FuelItem;
 import net.mashy.mccourses.item.custom.MetalDetectoritem;
+import net.mashy.mccourses.item.custom.PaxelItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -34,6 +35,9 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.ALEXANDRITE, 1,5,new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ALEXANDRITE_SHOVEL = ITEMS.register("alexandrite_shovel",
             () -> new ShovelItem(ModToolTiers.ALEXANDRITE, 2,3,new Item.Properties().durability(256)));
+
+    public static final RegistryObject<Item> ALEXANDRITE_PAXEL = ITEMS.register("alexandrite_paxel",
+            () -> new PaxelItem(ModToolTiers.ALEXANDRITE, 2,3,new Item.Properties().durability(256)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
