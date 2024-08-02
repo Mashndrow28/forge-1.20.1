@@ -17,7 +17,6 @@
   "item.mccourses.alexandrite_chestplate": "Alexandrite Chestplate",
   "item.mccourses.alexandrite_leggings": "Alexandrite Leggings",
   "item.mccourses.alexandrite_boots": "Alexandrite Boots",
-
   "item.mccourses.alexandrite_horse_armor": "Alexandrite Horse Armor",
 
   "block.mccourses.alexandrite_block": "Block of Alexandrite",
@@ -44,7 +43,8 @@
 
   "tooltip.mccourses.metal_detector.tooltip.shift": "Right Click on Blocks to find Valuables",
   "tooltip.mccourses.metal_detector.tooltip": "Press §eSHIFT§r for more Information",
-  "tooltip.mccourses.sound_block": "Plays nice sounds when walking or right-clicking"
+  "tooltip.mccourses.sound_block": "Plays nice sounds when walking or right-clicking",
 
+  "enchantment.mccourses.lightning_striker": "Lightning Striker"
 
 }

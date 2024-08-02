@@ -3,6 +3,7 @@ package net.mashy.mccourses;
 import com.mojang.logging.LogUtils;
 import net.mashy.mccourses.block.ModBlocks;
 import net.mashy.mccourses.block.custom.SoundBlock;
+import net.mashy.mccourses.enchantment.ModEnchantments;
 import net.mashy.mccourses.item.ModCreativeModeTabs;
 import net.mashy.mccourses.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -35,6 +36,8 @@ public class MCCourseMod
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModEnchantments.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
