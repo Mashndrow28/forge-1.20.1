@@ -54,6 +54,9 @@ public class ModItems {
                     new ResourceLocation(MCCourseMod.MOD_ID, "textures/entity/horse/armor/horse_armor_alexandrite.png"),
                     new Item.Properties()));
 
+    public static final RegistryObject<Item> DATA_TABLET = ITEMS.register("data_tablet",
+            () -> new DataTabletItem(new Item.Properties().stacksTo(1)));
+
 
 
     public static void register(IEventBus eventBus){

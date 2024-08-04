@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "mccourses:block/alexandrite_lamp_off"
+    },
+    "clicked=true": {
+      "model": "mccourses:block/alexandrite_lamp_on"
+    }
+  }
+}

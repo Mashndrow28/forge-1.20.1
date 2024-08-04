@@ -20,6 +20,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.RAW_ALEXANDRITE_BLOCK.get());
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
 
+
         this.add(ModBlocks.ALEXANDRITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.ALEXANDRITE_ORE.get(), ModItems.RAW_ALEXANDRITE.get()));
         this.add(ModBlocks.DEEPSLATE_ALEXANDRITE_ORE.get(),
@@ -42,7 +43,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.ALEXANDRITE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.ALEXANDRITE_DOOR.get()));
 
-
+        this.dropSelf(ModBlocks.ALEXANDRITE_LAMP.get());
 
     }
 

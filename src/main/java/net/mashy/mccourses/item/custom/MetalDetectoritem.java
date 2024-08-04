@@ -1,9 +1,12 @@
 package net.mashy.mccourses.item.custom;
 
+import net.mashy.mccourses.item.ModItems;
+import net.mashy.mccourses.util.InventoryUtil;
 import net.mashy.mccourses.util.ModTags;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -38,9 +41,12 @@ public class MetalDetectoritem extends Item {
                 if (isValuableBlock(blockState)){
                     outputValuableCoordinates(positionCLicked.below(i), player, blockState.getBlock());
                     foundBlock = true;
-                    
-                    break;
 
+                if (InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET.get())){
+                    addDataToDataTablet(player, positionCLicked.below(i), blockState.getBlock());
+                }
+
+                    break;
                 }
             }
             if (!foundBlock){
@@ -52,6 +58,16 @@ public class MetalDetectoritem extends Item {
                 player -> player.broadcastBreakEvent(player.getUsedItemHand()));
 
         return InteractionResult.SUCCESS;
+    }
+
+    private void addDataToDataTablet(Player player, BlockPos below, Block block) {
+        ItemStack dataTablet = player.getInventory().getItem(InventoryUtil.getFirstInventoryIndex(player, ModItems.DATA_TABLET.get()));
+
+        CompoundTag data = new CompoundTag();
+        data.putString("mccourses.found_ore","Valuable Found: " + I18n.get(block.getDescriptionId())
+                + " at (" + below.getX() + ", " + below.getY() + ", " + below.getZ() + ")");
+
+        dataTablet.setTag(data);
     }
 
     @Override

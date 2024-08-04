@@ -43,6 +43,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK.get());
                         output.accept(ModBlocks.SOUND_BLOCK.get());
 
+                        output.accept(ModBlocks.ALEXANDRITE_LAMP.get());
+
                         output.accept(ModBlocks.ALEXANDRITE_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_ALEXANDRITE_ORE.get());
                         output.accept(ModBlocks.END_STONE_ALEXANDRITE_ORE.get());
@@ -57,6 +59,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ALEXANDRITE_WALL.get());
                         output.accept(ModBlocks.ALEXANDRITE_DOOR.get());
                         output.accept(ModBlocks.ALEXANDRITE_TRAPDOOR.get());
+
+                        output.accept(ModItems.DATA_TABLET.get());
 
                     }).build());
 
