@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_ALEXANDRITE.get());
                         output.accept(ModItems.METAL_DETECTOR.get());
                         output.accept(ModItems.KOHLRABI.get());
+                        output.accept(ModItems.KOHLRABI_SEEDS.get());
                         output.accept(ModItems.PEAT_BRICK.get());
 
                         output.accept(ModItems.ALEXANDRITE_SWORD.get());
@@ -61,6 +62,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ALEXANDRITE_TRAPDOOR.get());
 
                         output.accept(ModItems.DATA_TABLET.get());
+
 
                     }).build());
 

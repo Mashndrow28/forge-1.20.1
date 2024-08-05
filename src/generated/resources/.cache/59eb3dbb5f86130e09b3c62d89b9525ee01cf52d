@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-04T16:22:39.3209737	Loot Tables
+// 1.20.1	2024-08-04T21:05:06.1197461	Loot Tables
 f6e680d4aff2856e4a35d6a7a885198fe167759d data/mccourses/loot_tables/blocks/alexandrite_block.json
 97450254e6a84bca26ccaa2996c453852bda5ea8 data/mccourses/loot_tables/blocks/alexandrite_button.json
 41a6c187e201c476ed99f0565e1fc9548128ac64 data/mccourses/loot_tables/blocks/alexandrite_door.json
@@ -13,6 +13,7 @@ dea96c9becb2027f571594465ffd7c68a42792ee data/mccourses/loot_tables/blocks/alexa
 e1745ed8e992da166cb78aa72881dd1367ae469d data/mccourses/loot_tables/blocks/alexandrite_wall.json
 d3adddde460dabf1cd2e2f22f3d6ce75ee03b969 data/mccourses/loot_tables/blocks/deepslate_alexandrite_ore.json
 6e0436131b26bd77108996ee03e0a5d7e04b0c66 data/mccourses/loot_tables/blocks/end_stone_alexandrite_ore.json
+7484d1d5544ab301890fb6fbe60f8a5de1b6fc66 data/mccourses/loot_tables/blocks/kohlrabi_crop.json
 e1ab46987e80a6ebc060e61e840d1b360d553e0c data/mccourses/loot_tables/blocks/nether_alexandrite_ore.json
 51d4c8e65744b38a82450af42f4446e3a801b91c data/mccourses/loot_tables/blocks/raw_alexandrite_block.json
 8608923749581911a9ba6d300a7ff1249f6a046d data/mccourses/loot_tables/blocks/sound_block.json

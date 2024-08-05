@@ -1,6 +1,7 @@
 package net.mashy.mccourses.item;
 
 import net.mashy.mccourses.MCCourseMod;
+import net.mashy.mccourses.block.ModBlocks;
 import net.mashy.mccourses.item.custom.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
@@ -56,6 +57,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> DATA_TABLET = ITEMS.register("data_tablet",
             () -> new DataTabletItem(new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> KOHLRABI_SEEDS = ITEMS.register("kohlrabi_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.KOHLRABI_CROP.get(), new Item.Properties()));
 
 
 

@@ -5,6 +5,7 @@ import net.mashy.mccourses.block.ModBlocks;
 import net.mashy.mccourses.block.custom.SoundBlock;
 import net.mashy.mccourses.enchantment.ModEnchantments;
 import net.mashy.mccourses.item.ModCreativeModeTabs;
+import net.mashy.mccourses.item.ModItemProperties;
 import net.mashy.mccourses.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -87,7 +88,9 @@ public class MCCourseMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            event.enqueueWork(() -> {
+                ModItemProperties.addCustomItemProperties();
+            });
         }
     }
 }
