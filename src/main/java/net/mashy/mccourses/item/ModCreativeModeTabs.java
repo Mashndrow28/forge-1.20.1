@@ -63,6 +63,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.DATA_TABLET.get());
 
+                        output.accept(ModBlocks.SNAPDRAGON.get());
+
 
                     }).build());
 

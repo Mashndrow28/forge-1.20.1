@@ -55,6 +55,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.KOHLRABI_CROP.get(), this.createCropDrops(ModBlocks.KOHLRABI_CROP.get(),
                 ModItems.KOHLRABI.get(), ModItems.KOHLRABI_SEEDS.get(), lootitemcondition$builder1));
 
+        this.dropSelf(ModBlocks.POTTED_SNAPDRAGON.get());
+        this.add(ModBlocks.SNAPDRAGON.get(),
+                createPotFlowerItemTable(ModBlocks.POTTED_SNAPDRAGON.get()));
 
 
     }

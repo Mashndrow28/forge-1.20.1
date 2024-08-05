@@ -48,6 +48,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.ALEXANDRITE_WALL, ModBlocks.ALEXANDRITE_BLOCK);
 
         simpleBlockItem(ModBlocks.ALEXANDRITE_DOOR);
+        simpleBlockItem(ModBlocks.SNAPDRAGON);
+
 
     }
 

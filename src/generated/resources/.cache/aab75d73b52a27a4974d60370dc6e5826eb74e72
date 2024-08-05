@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-04T21:05:06.1227487	Block States: mccourses
+// 1.20.1	2024-08-05T17:23:56.1622921	Block States: mccourses
 383684169509be7a0404e7be7948af3b699fc1f1 assets/mccourses/blockstates/alexandrite_block.json
 af52598a8e67868000202b2729c8cca96c208fcb assets/mccourses/blockstates/alexandrite_button.json
 fd9e1a0270739cc935b222a0f43c0855fe931b99 assets/mccourses/blockstates/alexandrite_door.json
@@ -16,6 +16,7 @@ ce8a120db118f0005203c319d617071b4b3ebcae assets/mccourses/blockstates/alexandrit
 07aa2e818917d1ea2d6f7a642c1876f82ead6912 assets/mccourses/blockstates/kohlrabi_crop.json
 f69c703ea64888f50617e9c4b12ca055f1acf1b3 assets/mccourses/blockstates/nether_alexandrite_ore.json
 001d91f7c07655f91a20db028691c1242742931f assets/mccourses/blockstates/raw_alexandrite_block.json
+742249de6221e14641851c5822a7c59a421e4faf assets/mccourses/blockstates/snapdragon.json
 dc75486799ab7d4e220a2ef876847109597ff5c9 assets/mccourses/blockstates/sound_block.json
 105e27f2d4e8b0a84939c3598fbba0d9da58409b assets/mccourses/models/block/alexandrite_block.json
 2d9d8bd6c0d626bfd52337410ed9ca39b7171179 assets/mccourses/models/block/alexandrite_button.json
@@ -61,6 +62,7 @@ c78248ad8c33ae163d2dcd762c94dd4d95c2b891 assets/mccourses/models/block/kohlrabi_
 47cfca203b5e598bde40f9373197c4497a6a9f5e assets/mccourses/models/block/kohlrabi_stage6.json
 bea3589f2e3d14623ff486b91e3c0a166eb4a10d assets/mccourses/models/block/nether_alexandrite_ore.json
 8029bba3013ee121f6de7e92e3a7bc1bdf898b8f assets/mccourses/models/block/raw_alexandrite_block.json
+b39e4ce56ee3d875983aaabcca329f63df68d328 assets/mccourses/models/block/snapdragon.json
 2f7cbe7f9bd22474c7500c562edec46ef99afc36 assets/mccourses/models/block/sound_block.json
 5cade0b695b7e35e867286bbf1ea6c45f359db1c assets/mccourses/models/item/alexandrite_block.json
 dd061d3ac671970937afbd5f47ef5928d1e36079 assets/mccourses/models/item/alexandrite_fence_gate.json
