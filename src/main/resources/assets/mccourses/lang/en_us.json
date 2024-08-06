@@ -49,6 +49,14 @@
   "tooltip.mccourses.metal_detector.tooltip": "Press §eSHIFT§r for more Information",
   "tooltip.mccourses.sound_block": "Plays nice sounds when walking or right-clicking",
 
-  "enchantment.mccourses.lightning_striker": "Lightning Striker"
+  "enchantment.mccourses.lightning_striker": "Lightning Striker",
+
+  "sounds.mccourses.metal_detector_found_ore": "Metal Detector Found an Ore",
+
+  "item.mccourses.bar_brawl_record": "Bar Brawl Music Disc",
+  "item.mccourses.bar_brawl_record.desc": "Bryan Tech - Bar Brawl (CC0)",
+
+  "block.mccourses.gem_empowering_station": "Gem Empowering Station"
+
 
 }

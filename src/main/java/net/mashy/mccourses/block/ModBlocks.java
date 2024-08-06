@@ -2,9 +2,11 @@ package net.mashy.mccourses.block;
 
 import net.mashy.mccourses.MCCourseMod;
 import net.mashy.mccourses.block.custom.AlexandriteLampBlock;
+import net.mashy.mccourses.block.custom.GemEmpoweringStationBlock;
 import net.mashy.mccourses.block.custom.KohlrabiCropBlock;
 import net.mashy.mccourses.block.custom.SoundBlock;
 import net.mashy.mccourses.item.ModItems;
+import net.mashy.mccourses.sound.ModSounds;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
@@ -79,7 +81,8 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
 
     public static final RegistryObject<Block> ALEXANDRITE_LAMP = registerBlock("alexandrite_lamp",
-            () -> new AlexandriteLampBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE).sound(SoundType.GLASS)
+            () -> new AlexandriteLampBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE)
+                    .sound(ModSounds.ALEXANDRITE_LAMP_SOUND).strength(1f)
                     .lightLevel(state -> state.getValue(AlexandriteLampBlock.CLICKED) ? 15 : 0)));
 
     public static final RegistryObject<Block> KOHLRABI_CROP = BLOCKS.register("kohlrabi_crop",
@@ -90,6 +93,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_SNAPDRAGON = BLOCKS.register("potted_snapdragon",
             () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), SNAPDRAGON,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
+    public static final RegistryObject<Block> GEM_EMPOWERING_STATION = registerBlock("gem_empowering_station",
+            () -> new GemEmpoweringStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
 
 
 

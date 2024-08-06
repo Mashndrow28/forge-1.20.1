@@ -1,6 +1,7 @@
 package net.mashy.mccourses.item.custom;
 
 import net.mashy.mccourses.item.ModItems;
+import net.mashy.mccourses.sound.ModSounds;
 import net.mashy.mccourses.util.InventoryUtil;
 import net.mashy.mccourses.util.ModTags;
 import net.minecraft.client.gui.screens.Screen;
@@ -8,6 +9,7 @@ import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -42,9 +44,12 @@ public class MetalDetectoritem extends Item {
                     outputValuableCoordinates(positionCLicked.below(i), player, blockState.getBlock());
                     foundBlock = true;
 
-                if (InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET.get())){
-                    addDataToDataTablet(player, positionCLicked.below(i), blockState.getBlock());
-                }
+                    if (InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET.get())){
+                        addDataToDataTablet(player, positionCLicked.below(i), blockState.getBlock());
+                    }
+
+                    pContext.getLevel().playSeededSound(null, player.getX(),player.getY(),player.getZ(),
+                            ModSounds.METAL_DETECTOR_FOUND_ORE.get(), SoundSource.BLOCKS, 1f,1f,0);
 
                     break;
                 }
