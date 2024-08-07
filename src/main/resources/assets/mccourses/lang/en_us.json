@@ -21,6 +21,8 @@
   "item.mccourses.data_tablet": "Data Tablet",
   "item.mccourses.kohlrabi_seeds": "Kohlrabi Seeds",
   "item.mccourses.radiation_staff": "Radiation Staff",
+  "item.mccourses.alexandrite_bow": "Alexandrite Bow",
+  "item.mccourses.alexandrite_shield": "Alexandrite Shield",
 
   "block.mccourses.alexandrite_block": "Block of Alexandrite",
   "block.mccourses.raw_alexandrite_block": "Block of Raw Alexandrite",
@@ -57,7 +59,13 @@
   "item.mccourses.bar_brawl_record": "Bar Brawl Music Disc",
   "item.mccourses.bar_brawl_record.desc": "Bryan Tech - Bar Brawl (CC0)",
 
-  "block.mccourses.gem_empowering_station": "Gem Empowering Station"
+  "block.mccourses.gem_empowering_station": "Gem Empowering Station",
 
+  "painting.mccourses.world.title": "World",
+  "painting.mccourses.world.author": "NanoAttack",
+  "painting.mccourses.shrimp.title": "Shrimp",
+  "painting.mccourses.shrimp.author": "NanoAttack",
+  "painting.mccourses.saw_them.title": "Saw Them",
+  "painting.mccourses.saw_them.author": "NanoAttack"
 
 }

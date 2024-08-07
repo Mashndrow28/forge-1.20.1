@@ -7,6 +7,8 @@ import net.mashy.mccourses.enchantment.ModEnchantments;
 import net.mashy.mccourses.item.ModCreativeModeTabs;
 import net.mashy.mccourses.item.ModItemProperties;
 import net.mashy.mccourses.item.ModItems;
+import net.mashy.mccourses.loot.ModLootModifiers;
+import net.mashy.mccourses.painting.ModPaintings;
 import net.mashy.mccourses.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
@@ -43,6 +45,8 @@ public class MCCourseMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
+        ModPaintings.register(modEventBus);
 
         ModEnchantments.register(modEventBus);
 

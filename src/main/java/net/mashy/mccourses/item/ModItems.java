@@ -70,6 +70,12 @@ public class ModItems {
     public static final RegistryObject<Item> RADIATION_STAFF =
             ITEMS.register("radiation_staff", () -> new Item(new Item.Properties().stacksTo(1).durability(1024)));
 
+    public static final RegistryObject<Item> ALEXANDRITE_BOW =
+            ITEMS.register("alexandrite_bow", () -> new BowItem(new Item.Properties().stacksTo(1).durability(500)));
+    public static final RegistryObject<Item> ALEXANDRITE_SHIELD =
+            ITEMS.register("alexandrite_shield", () -> new ShieldItem(new Item.Properties().stacksTo(1).durability(500)));
+
+
 
 
     public static void register(IEventBus eventBus){

@@ -1,0 +1,5 @@
+// 1.20.1	2024-08-07T13:39:29.4599693	Global Loot Modifiers : mccourses
+6a9f6cae304b4558ceb7c2a88f7ab702acc45bf3 data/forge/loot_modifiers/global_loot_modifiers.json
+55c521e68586131e3dd32905da3841715add5fea data/mccourses/loot_modifiers/kohlrabi_seeds_from_fern.json
+bc78cb7e23f10703be9e3ea240dc452233edac7e data/mccourses/loot_modifiers/kohlrabi_seeds_from_grass.json
+1c9f627203bb44e812c1a67856830fd6c3274570 data/mccourses/loot_modifiers/metal_detector_from_jungle_temple.json
