@@ -4,7 +4,6 @@
   "item.mccourses.metal_detector": "Metal Detector",
   "item.mccourses.kohlrabi": "Kohlrabi",
   "item.mccourses.peat_brick": "Peat Brick",
-
   "item.mccourses.alexandrite_sword": "Alexandrite Sword",
   "item.mccourses.alexandrite_pickaxe": "Alexandrite PickAxe",
   "item.mccourses.alexandrite_axe": "Alexandrite Axe",
@@ -12,7 +11,6 @@
   "item.mccourses.alexandrite_hoe": "Alexandrite Hoe",
   "item.mccourses.alexandrite_paxel": "Alexandrite Paxel",
   "item.mccourses.alexandrite_hammer": "Alexandrite Hammer",
-
   "item.mccourses.alexandrite_helmet": "Alexandrite Helmet",
   "item.mccourses.alexandrite_chestplate": "Alexandrite Chestplate",
   "item.mccourses.alexandrite_leggings": "Alexandrite Leggings",
@@ -24,16 +22,13 @@
   "item.mccourses.alexandrite_bow": "Alexandrite Bow",
   "item.mccourses.alexandrite_shield": "Alexandrite Shield",
 
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
   "block.mccourses.alexandrite_block": "Block of Alexandrite",
   "block.mccourses.raw_alexandrite_block": "Block of Raw Alexandrite",
   "block.mccourses.alexandrite_ore": "Block of Alexandrite Ore",
-  "block.mccourses.deepslate_alexandrite_ore": "Block of Deepslate Alexandrite Ore",
-  "block.mccourses.end_stone_alexandrite_ore": "Block of End Stone Alexandrite Ore",
-  "block.mccourses.nether_alexandrite_ore": "Block of Nether Alexandrite Ore",
-  "block.mccourses.sound_block": "Sound Block",
-  "block.mccourses.alexandrite_lamp": "Alexandrite Lamp",
-  "block.mccourses.snapdragon": "Snapdragon",
-
   "block.mccourses.alexandrite_stairs": "Alexandrite Stairs",
   "block.mccourses.alexandrite_slab": "Alexandrite Slab",
   "block.mccourses.alexandrite_pressure_plate": "Alexandrite Pressure Plate",
@@ -43,10 +38,19 @@
   "block.mccourses.alexandrite_wall": "Alexandrite Wall",
   "block.mccourses.alexandrite_door": "Alexandrite Door",
   "block.mccourses.alexandrite_trapdoor": "Alexandrite Trapdoor",
+  "block.mccourses.deepslate_alexandrite_ore": "Block of Deepslate Alexandrite Ore",
+  "block.mccourses.end_stone_alexandrite_ore": "Block of End Stone Alexandrite Ore",
+  "block.mccourses.nether_alexandrite_ore": "Block of Nether Alexandrite Ore",
+  "block.mccourses.sound_block": "Sound Block",
+  "block.mccourses.alexandrite_lamp": "Alexandrite Lamp",
+  "block.mccourses.snapdragon": "Snapdragon",
+  "block.mccourses.gem_empowering_station": "Gem Empowering Station",
 
   "creativetab.course_tab": "Course Tab",
 
   "item.mccourses.metal_detector.no_valuables": "No Valuables Found!",
+  "item.mccourses.bar_brawl_record": "Bar Brawl Music Disc",
+  "item.mccourses.bar_brawl_record.desc": "Bryan Tech - Bar Brawl (CC0)",
 
   "tooltip.mccourses.metal_detector.tooltip.shift": "Right Click on Blocks to find Valuables",
   "tooltip.mccourses.metal_detector.tooltip": "Press §eSHIFT§r for more Information",
@@ -56,16 +60,14 @@
 
   "sounds.mccourses.metal_detector_found_ore": "Metal Detector Found an Ore",
 
-  "item.mccourses.bar_brawl_record": "Bar Brawl Music Disc",
-  "item.mccourses.bar_brawl_record.desc": "Bryan Tech - Bar Brawl (CC0)",
-
-  "block.mccourses.gem_empowering_station": "Gem Empowering Station",
 
   "painting.mccourses.world.title": "World",
   "painting.mccourses.world.author": "NanoAttack",
   "painting.mccourses.shrimp.title": "Shrimp",
   "painting.mccourses.shrimp.author": "NanoAttack",
   "painting.mccourses.saw_them.title": "Saw Them",
-  "painting.mccourses.saw_them.author": "NanoAttack"
+  "painting.mccourses.saw_them.author": "NanoAttack",
+
+  "effect.mccourses.slimey": "Slimey"
 
 }

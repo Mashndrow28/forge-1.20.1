@@ -3,20 +3,27 @@ package net.mashy.mccourses;
 import com.mojang.logging.LogUtils;
 import net.mashy.mccourses.block.ModBlocks;
 import net.mashy.mccourses.block.custom.SoundBlock;
+import net.mashy.mccourses.effect.ModEffects;
 import net.mashy.mccourses.enchantment.ModEnchantments;
 import net.mashy.mccourses.item.ModCreativeModeTabs;
 import net.mashy.mccourses.item.ModItemProperties;
 import net.mashy.mccourses.item.ModItems;
 import net.mashy.mccourses.loot.ModLootModifiers;
 import net.mashy.mccourses.painting.ModPaintings;
+import net.mashy.mccourses.potion.BetterBrewingRecipe;
+import net.mashy.mccourses.potion.ModPotions;
 import net.mashy.mccourses.sound.ModSounds;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.DecoratedPotBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -47,6 +54,8 @@ public class MCCourseMod
         ModSounds.register(modEventBus);
         ModLootModifiers.register(modEventBus);
         ModPaintings.register(modEventBus);
+        ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
 
         ModEnchantments.register(modEventBus);
 
@@ -67,6 +76,8 @@ public class MCCourseMod
             ComposterBlock.COMPOSTABLES.put(ModItems.KOHLRABI_SEEDS.get(), 0.20f);
 
             ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.SNAPDRAGON.getId(), ModBlocks.POTTED_SNAPDRAGON);
+
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, Items.SLIME_BALL, ModPotions.SLIMEY_POTION.get()));
         });
     }
 
