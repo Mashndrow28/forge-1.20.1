@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-05T18:56:07.3647789	Item Models: mccourses
+// 1.20.1	2024-08-08T20:39:06.2774432	Item Models: mccourses
 257d38b37ca7fb51c73cbe847b56089061bb436f assets/mccourses/models/item/alexandrite.json
 27a183015913956b8b069c6b180a3b7ba65cb039 assets/mccourses/models/item/alexandrite_axe.json
 b55a9e1693d9bbc76f263bb82a3a9e21db8c919d assets/mccourses/models/item/alexandrite_button.json
@@ -20,3 +20,4 @@ d34b31ff732634a1399a9736dcdc1d902a3e3cea assets/mccourses/models/item/kohlrabi_s
 bf10a2742d61b9956f7ef6fb92b3a29d5f4bd6f5 assets/mccourses/models/item/peat_brick.json
 b5988d2dd4af348c0151a3fb0a71b3b6aa013a83 assets/mccourses/models/item/raw_alexandrite.json
 b36175e624f45f9f858329fde6524e9c40f91a26 assets/mccourses/models/item/snapdragon.json
+988f427cd74eeb24da123628c3a4471f8fd50aeb assets/mccourses/models/item/soap_water_bucket.json

@@ -5,6 +5,7 @@ import net.mashy.mccourses.block.custom.AlexandriteLampBlock;
 import net.mashy.mccourses.block.custom.GemEmpoweringStationBlock;
 import net.mashy.mccourses.block.custom.KohlrabiCropBlock;
 import net.mashy.mccourses.block.custom.SoundBlock;
+import net.mashy.mccourses.fluid.ModFluids;
 import net.mashy.mccourses.item.ModItems;
 import net.mashy.mccourses.sound.ModSounds;
 import net.minecraft.sounds.SoundEvents;
@@ -95,6 +96,8 @@ public class ModBlocks {
                     BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
     public static final RegistryObject<Block> GEM_EMPOWERING_STATION = registerBlock("gem_empowering_station",
             () -> new GemEmpoweringStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    public static final RegistryObject<LiquidBlock> SOAP_WATER_BLOCK = BLOCKS.register("soap_water_block",
+                () -> new LiquidBlock(ModFluids.SOURCE_SOAP_WATER, BlockBehaviour.Properties.copy(Blocks.WATER).noLootTable()));
 
 
 

@@ -2,6 +2,7 @@ package net.mashy.mccourses.item;
 
 import net.mashy.mccourses.MCCourseMod;
 import net.mashy.mccourses.block.ModBlocks;
+import net.mashy.mccourses.fluid.ModFluids;
 import net.mashy.mccourses.item.custom.*;
 import net.mashy.mccourses.sound.ModSounds;
 import net.minecraft.resources.ResourceLocation;
@@ -74,6 +75,11 @@ public class ModItems {
             ITEMS.register("alexandrite_bow", () -> new BowItem(new Item.Properties().stacksTo(1).durability(500)));
     public static final RegistryObject<Item> ALEXANDRITE_SHIELD =
             ITEMS.register("alexandrite_shield", () -> new ShieldItem(new Item.Properties().stacksTo(1).durability(500)));
+    public static final RegistryObject<Item> SOAP_WATER_BUCKET =
+            ITEMS.register("soap_water_bucket",
+                    () -> new BucketItem(ModFluids.SOURCE_SOAP_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+
 
 
 

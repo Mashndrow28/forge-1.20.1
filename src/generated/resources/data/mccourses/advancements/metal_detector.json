@@ -1,0 +1,39 @@
+{
+  "parent": "mccourses:mccourses",
+  "criteria": {
+    "has_metal_detector": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mccourses:metal_detector"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Batteries not included! (cry about it)"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "mccourses:metal_detector",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Detector Metal"
+    }
+  },
+  "requirements": [
+    [
+      "has_metal_detector"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

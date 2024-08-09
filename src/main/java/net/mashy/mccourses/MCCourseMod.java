@@ -2,24 +2,27 @@ package net.mashy.mccourses;
 
 import com.mojang.logging.LogUtils;
 import net.mashy.mccourses.block.ModBlocks;
-import net.mashy.mccourses.block.custom.SoundBlock;
 import net.mashy.mccourses.effect.ModEffects;
 import net.mashy.mccourses.enchantment.ModEnchantments;
+import net.mashy.mccourses.fluid.ModFluidTypes;
+import net.mashy.mccourses.fluid.ModFluids;
 import net.mashy.mccourses.item.ModCreativeModeTabs;
 import net.mashy.mccourses.item.ModItemProperties;
 import net.mashy.mccourses.item.ModItems;
 import net.mashy.mccourses.loot.ModLootModifiers;
 import net.mashy.mccourses.painting.ModPaintings;
+import net.mashy.mccourses.particle.ModParticles;
 import net.mashy.mccourses.potion.BetterBrewingRecipe;
 import net.mashy.mccourses.potion.ModPotions;
 import net.mashy.mccourses.sound.ModSounds;
-import net.minecraft.world.effect.MobEffects;
+import net.mashy.mccourses.villager.ModVillagers;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
-import net.minecraft.world.level.block.DecoratedPotBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,9 +31,7 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -56,6 +57,10 @@ public class MCCourseMod
         ModPaintings.register(modEventBus);
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
+        ModVillagers.register(modEventBus);
+        ModParticles.register(modEventBus);
+        ModFluidTypes.register(modEventBus);
+        ModFluids.register(modEventBus);
 
         ModEnchantments.register(modEventBus);
 
@@ -116,6 +121,9 @@ public class MCCourseMod
         {
             event.enqueueWork(() -> {
                 ModItemProperties.addCustomItemProperties();
+
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_SOAP_WATER.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_SOAP_WATER.get(), RenderType.translucent());
             });
         }
     }

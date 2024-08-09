@@ -21,6 +21,7 @@
   "item.mccourses.radiation_staff": "Radiation Staff",
   "item.mccourses.alexandrite_bow": "Alexandrite Bow",
   "item.mccourses.alexandrite_shield": "Alexandrite Shield",
+  "item.mccourses.soap_water_bucket": "Soap Water Bucket",
 
   "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
@@ -68,6 +69,8 @@
   "painting.mccourses.saw_them.title": "Saw Them",
   "painting.mccourses.saw_them.author": "NanoAttack",
 
-  "effect.mccourses.slimey": "Slimey"
+  "effect.mccourses.slimey": "Slimey",
+
+  "entity.minecraft.villager.mccourses.soundmaster": "Soundmaster"
 
 }
