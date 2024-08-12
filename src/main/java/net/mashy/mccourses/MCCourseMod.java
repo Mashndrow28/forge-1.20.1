@@ -2,6 +2,7 @@ package net.mashy.mccourses;
 
 import com.mojang.logging.LogUtils;
 import net.mashy.mccourses.block.ModBlocks;
+import net.mashy.mccourses.block.entity.ModBlockEntities;
 import net.mashy.mccourses.effect.ModEffects;
 import net.mashy.mccourses.enchantment.ModEnchantments;
 import net.mashy.mccourses.fluid.ModFluidTypes;
@@ -14,8 +15,11 @@ import net.mashy.mccourses.painting.ModPaintings;
 import net.mashy.mccourses.particle.ModParticles;
 import net.mashy.mccourses.potion.BetterBrewingRecipe;
 import net.mashy.mccourses.potion.ModPotions;
+import net.mashy.mccourses.screen.GemEmpoweringStationScreen;
+import net.mashy.mccourses.screen.ModMenuTypes;
 import net.mashy.mccourses.sound.ModSounds;
 import net.mashy.mccourses.villager.ModVillagers;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -61,6 +65,8 @@ public class MCCourseMod
         ModParticles.register(modEventBus);
         ModFluidTypes.register(modEventBus);
         ModFluids.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         ModEnchantments.register(modEventBus);
 
@@ -124,6 +130,8 @@ public class MCCourseMod
 
                 ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_SOAP_WATER.get(), RenderType.translucent());
                 ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_SOAP_WATER.get(), RenderType.translucent());
+
+                MenuScreens.register(ModMenuTypes.GEM_EMPOWERING_MENU.get(), GemEmpoweringStationScreen::new);
             });
         }
     }
