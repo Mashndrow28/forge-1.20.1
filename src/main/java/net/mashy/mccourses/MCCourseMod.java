@@ -15,6 +15,7 @@ import net.mashy.mccourses.painting.ModPaintings;
 import net.mashy.mccourses.particle.ModParticles;
 import net.mashy.mccourses.potion.BetterBrewingRecipe;
 import net.mashy.mccourses.potion.ModPotions;
+import net.mashy.mccourses.recipe.ModRecipes;
 import net.mashy.mccourses.screen.GemEmpoweringStationScreen;
 import net.mashy.mccourses.screen.ModMenuTypes;
 import net.mashy.mccourses.sound.ModSounds;
@@ -67,8 +68,8 @@ public class MCCourseMod
         ModFluids.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
-
         ModEnchantments.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
